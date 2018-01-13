@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Crpyto-Currency Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+</head>
+<body onload="getCoins()">
+  <div id="main">
+    <ol class="breadcrumb">
+  <li><a href="index.html">Homepage</a></li>
+   &nbsp;<b>Made by @SaniaLs4Life</b>
+  </ol>
+    <form>
+  <div class="form-row align-items-center">
+    <div class="col-sm-3">
+      <label class="sr-only" for="txtBTC">1 BTC</label>
+      <div class="input-group mb-2 mb-sm-0">
+        <div class="input-group-addon"><b>1 BTC</b></div>
+        <input type="text" class="form-control" style="font-weight:bold;" disabled id="txtBTC">
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <label class="sr-only" for="txtETH">1 ETH</label>
+      <div class="input-group mb-2 mb-sm-0">
+        <div class="input-group-addon"><b>1 ETH</b></div>
+        <input type="text" class="form-control" style="font-weight:bold;" disabled id="txtETH">
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <label class="sr-only" for="txtIOTA">1 IOTA</label>
+      <div class="input-group mb-2 mb-sm-0">
+        <div class="input-group-addon"><b>1 IOTA</b></div>
+        <input type="text" class="form-control" style="font-weight:bold;" disabled id="txtIOTA">
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <label class="sr-only" for="txtREQ">1 REQ</label>
+      <div class="input-group mb-2 mb-sm-0">
+        <div class="input-group-addon"><b>1 REQ</b></div>
+        <input type="text" class="form-control" style="font-weight:bold;" disabled id="txtREQ">
+      </div>
+    </div>
+  </div>
+</form>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Symbol</th>
+          <th scope="col">Name</th>
+          <th scope="col">Market Cap</th>
+          <th scope="col">Price</th>
+          <th scope="col">Change(1h)</th>
+          <th scope="col">Change(24h)</th>
+          <th scope="col">Change(7d)</th>
+          <th scope="col">Last Updated Date</th>
+        </tr>
+      </thead>
+      <tbody id="liste">
+
+      </tbody>
+    </table>
+  </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
